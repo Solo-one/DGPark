@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="{{showView?'bright789_view_show':'bright789_view_hide'}}" id="status0">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">欢迎，{{userInfo.nickName}}</text>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+    <view class="parent">
+      <text class="renzheng" bindtap="playTap">点击申请认证</text>
+    </view>
+  </view>
+
+  <view class="{{showView?'bright789_view_hide':'bright789_view_show'}}" id="status1">
+    <form bindsubmit="playSub" bindreset="formReset">
+      <view class="header">
+        <image class="headerImg" src="{{headerImage}}"></image>
+      </view>
+      <view class="formitem">
+        <text class="title">公司名称:</text>
+        <view class="section">{{companyName}}</view>
+      </view>
+      <view class="formitem">
+        <text class="title">职位:</text>
+        <view class="section">
+          {{role}}
+        </view>
+      </view>
+      <view class="formitem">
+        <text class="title">姓名:</text>
+        <view class="section">
+          {{name}}
+        </view>
+      </view>
+      <view class="formitem">
+        <text class="title">证件类型:</text>
+        <view class="section">
+        {{cardType}}
+        </view>
+      </view>
+      <view class="formitem">
+        <text class="title">证件号码:</text>
+        <view class="section">
+         {{cardID}}
+        </view>
+      </view>
+      <view class="formitem">
+        <text class="title">手机号:</text>
+        <view class="section">
+          {{phone}}
+        </view>
+      </view>
+      <view class="formitem">
+        <text class="title">审批状态:</text>
+        <view class="section">
+          {{status}}
+        </view>
+      </view>
+    </form>
+  </view>
+
+</view>

@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="container">
+  <form bindsubmit="playSub" bindreset="formReset" report-submit="true">
+    <view class="header" bindtap="playTap">
+      <image class="headerImg" src="{{headerImage}}"></image>
+    </view>
+    <text class="headertext">上传人脸照片</text>
+    <view class="formitem">
+      <text class="title">公司:</text>
+      <view class="section">
+        <input class="input" name="companyName" placeholder="请输入公司名称" />
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">职位:</text>
+      <view class="section">
+        <input class="input" name="role" placeholder="请输入目前职位" />
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">姓名:</text>
+      <view class="section">
+        <input class="input" name="Name" placeholder="请输入姓名" />
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">性别:</text>
+      <view class="section2">
+        <radio-group class="radio-group input" bindchange="radioChange">
+          <label class="radio" wx:for="{{items}}">
+            <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">证件类型:</text>
+      <view class="section1">
+        <view class="input">
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+              {{array[index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">证件号码:</text>
+      <view class="section">
+        <input class="input" name="cardID" type="text" placeholder="请输入证件号码" />
+      </view>
+    </view>
+    <view class="formitem">
+      <text class="title">手机号:</text>
+      <view class="section">
+        <input class="input" name="phone" type="number" placeholder="请输入手机号" />
+      </view>
+    </view>
+    <view class="formitem">
+      <button class="sub" formType="submit">提交认证</button>
+    </view>
+  </form>
+</view>

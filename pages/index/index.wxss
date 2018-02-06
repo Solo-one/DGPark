@@ -1,0 +1,110 @@
+/**index.wxss**/
+@import "../../app.wxss";
+
+page {
+  background: white;
+}
+
+.container {
+  height: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box; */
+}
+
+.notice {
+  display: flex;
+  flex-direction: column;
+  background: #1296db;
+  /* height: 240rpx;
+  width: 100%; */
+}
+
+.notice-header {
+  /* display: flex; */
+  height: 60rpx;
+  /* width: 100%; */
+  /* flex-direction: row; */
+  color: white;
+   /* align-items: center;  */
+}
+
+.notice-image {
+  width: 45rpx;
+  height: 45rpx;
+  margin-left: 20rpx;
+  margin-right: 15rpx;
+  margin-top: 4rpx;
+  position: relative;
+  float: left;
+}
+
+.notice-title {
+  font-weight: bold;
+  line-height: 55rpx;
+}
+
+.notice-time {
+  color: white;
+  font-size: 14px;
+  line-height: 60rpx;
+  position: relative;
+  float: right;
+  margin-right: 30rpx;
+}
+
+swiper {
+  height: 200rpx;
+}
+
+.notice-desc {
+  padding: 10rpx 20px 5px 20px;
+  text-indent: 50rpx;
+  display: -webkit-box;
+  line-height: 50rpx;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #1C1C1C;
+}
+
+.weui-grids {
+  border-top: 1rpx solid #d9d9d9;
+  border-left: 1rpx solid #d9d9d9;
+}
+
+.weui-grid {
+  position: relative;
+  float: left;
+  padding: 40rpx 20rpx;
+  width: 33.33333333%;
+  box-sizing: border-box;
+  border-right: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+}
+
+.weui-grid_active {
+  background-color: #ececec;
+}
+
+.weui-grid__icon {
+  display: block;
+  width: 110rpx;
+  height: 110rpx;
+  margin: 0 auto;
+}
+
+.weui-grid__label {
+  margin-top: 10rpx;
+  display: block;
+  text-align: center;
+  color: #000;
+  font-size: 32rpx;
+  padding-top: 6rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

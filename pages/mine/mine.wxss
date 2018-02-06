@@ -1,0 +1,123 @@
+/**index.wxss**/
+
+/* #status0 {
+  display: block;
+}
+
+#status1 {
+  display: none;
+} */
+
+.bright789_view_hide{
+    display: none;
+}
+.bright789_view_show{
+    display: block;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 60rpx 20rpx 20rpx 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+  justify-content: center;
+  display: flex;
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.renzheng {
+  margin-top: 10px;
+  height: 35px;
+  line-height: 35px;
+  width: 120px;
+  border-radius: 10px;
+  background: #1296db;
+  text-align: center;
+  color: white
+}
+
+
+page {
+  background: white;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.headerImg {
+  width: 220rpx;
+  height: 240rpx;
+  margin-top: 20rpx;
+  margin-bottom: 5rpx;
+  border-radius: 6px;
+}
+
+.headertext {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24rpx;
+}
+
+.title {
+  width: 80px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold
+}
+
+.formitem {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.section {
+  margin-left: 3px;
+  height: 34px;
+  width: 380rpx;
+  border-bottom: 1px solid #333;
+  line-height: 34px;
+}
+
+.sub {
+  height: 30px;
+  line-height: 30px;
+  width: 120px;
+  border-radius: 10px;
+  background: #1296db;
+  color: white;
+  margin-bottom: 2rpx;
+  margin-left: 0rpx;
+}

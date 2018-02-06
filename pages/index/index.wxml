@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="notice">
+    <view class="notice-header">
+      <image class="notice-image" src="/image/notice.png" mode="aspectFit" />
+      <text class="notice-title">园区公告:</text>
+      <text class="notice-time">发布时间 {{time}}</text>
+    </view>
+    <swiper bindchange="changeSwiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="rgba(255, 255, 255, .6)" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for-items="{{desc}}" wx:key="{{index}}">
+        <swiper-item>
+           <text class="notice-desc">{{desc[index]}}</text> 
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class="grid-all">
+    <!--以下是gird关键代码-->
+    <view class="page__bd">
+      <view class="weui-grids">
+        <block wx:for-items="{{grids}}" wx:key="{{index}}">
+          <navigator url="" bindtap="playTap" class="weui-grid" data-id="{{grids[index]}}" hover-class="weui-grid_active">
+            <image class="weui-grid__icon" src="{{gridsImg[index]}}" mode="aspectFit" />
+            <view class="weui-grid__label">{{grids[index]}}</view>
+          </navigator>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
